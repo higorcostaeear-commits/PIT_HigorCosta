@@ -12,10 +12,10 @@ export default function ClientProviders({
   children: React.ReactNode
 }) {
   const { theme } = useLayoutService()
-  const [selectedTheme, setSelectedTheme] = useState('system')
+  const [selectedTheme, setSelectedTheme] = useState('dark')
   useEffect(() => {
-    setSelectedTheme(theme)
-  }, [theme])
+    setSelectedTheme('dark')
+  }, [])
 
   const updateStore = () => {
     cartStore.persist.rehydrate()

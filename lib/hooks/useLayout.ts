@@ -7,7 +7,7 @@ type Layout = {
 }
 
 const initialState: Layout = {
-  theme: 'system',
+  theme: 'dark',
   drawerOpen: false,
 }
 
@@ -22,11 +22,6 @@ export default function useLayoutService() {
   return {
     theme,
     drawerOpen,
-    toggleTheme: () => {
-      layoutStore.setState({
-        theme: theme === 'dark' ? 'light' : 'dark',
-      })
-    },
     toggleDrawer: () => {
       layoutStore.setState({
         drawerOpen: !drawerOpen,

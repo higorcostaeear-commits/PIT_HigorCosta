@@ -22,8 +22,6 @@ const Menu = () => {
 
   const { data: session } = useSession()
 
-  const { theme, toggleTheme } = useLayoutService()
-
   const handleClick = () => {
     ;(document.activeElement as HTMLElement).blur()
   }

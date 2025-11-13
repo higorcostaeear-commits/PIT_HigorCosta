@@ -33,7 +33,7 @@ export const options = {
   maintainAspectRatio: false,
   plugins: {
     legend: {
-      position: 'top',
+      position: 'top' as const,
       labels: {
         usePointStyle: true,
         boxWidth: 10,
@@ -175,7 +175,7 @@ const Dashboard = () => {
                 maintainAspectRatio: false,
                 plugins: {
                   legend: {
-                    position: 'bottom',
+                    position: 'bottom' as const,
                   },
                 },
               }}
