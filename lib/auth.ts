@@ -3,7 +3,9 @@ import bcrypt from 'bcryptjs'
 import dbConnect from './dbConnect'
 import UserModel from './models/UserModel'
 import NextAuth from 'next-auth'
+
 export const config = {
+  trustHost: true,
   providers: [
     CredentialsProvider({
       credentials: {
